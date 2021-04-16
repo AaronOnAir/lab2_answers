@@ -1,0 +1,34 @@
+package lab2Assignment;
+
+import java.util.Scanner;
+
+public class lab2_q3_sumOfTheIntegers {
+
+	public static void main(String[] args) {
+		
+		/*
+		Question-3
+
+		Write a program that asks the user for a positive nonzero integer value.
+		The program should use a loop to get the sum of all the integers
+		from 1 up to the number entered. 
+		 */
+
+		int sum=0;
+		int num = 0;
+					
+		Scanner sc = new Scanner (System.in);
+			
+			System.out.print("Enter your positive (nonzero) number: ");
+			num=sc.nextInt();
+			
+			for(int i=1;i<=num;i++) {
+							
+				sum=sum+i;						
+		
+			}
+			
+		System.out.println("Sum of all integers from 1 to the number that user entered is: " + sum);
+	}
+
+}
