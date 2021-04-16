@@ -1,0 +1,42 @@
+package lab2Assignment;
+
+import java.util.Scanner;
+
+public class lab2_q5_mealChargeIncludingTipAndTax {
+
+	public static void main(String[] args) {
+		
+		/*
+		Question-5
+
+		Write a program that computes the tax and tip on a restaurant bill.
+		The program should ask the user to enter the charge for the meal.
+		The tax should be 6.75 percent of the meal charge.
+		The tip should be 20 percent of the total after adding tax.
+		Display the meal charge, tax amount, tip amount, and total bill on the screen.
+		 */
+
+		int chargeForTheMeal;
+		double taxOfTheMealCharge=0;
+		double tip=0;
+		double totalBill=0;
+						
+		Scanner sc = new Scanner (System.in);
+					
+			System.out.print("Enter the charge for the meal: $");
+			chargeForTheMeal=sc.nextInt();
+			
+			System.out.println("Charge of the meal: $" + chargeForTheMeal);
+						
+			taxOfTheMealCharge=(double)chargeForTheMeal*(0.0675);
+			System.out.println("Tax: $" + taxOfTheMealCharge);
+
+			tip=(double)(chargeForTheMeal+taxOfTheMealCharge)*(0.2);
+			System.out.println("Tip: $" + tip);
+
+			totalBill=(double)chargeForTheMeal+taxOfTheMealCharge+tip;
+			System.out.println("\nTotal bill: $" + totalBill);
+						
+	}
+
+}
