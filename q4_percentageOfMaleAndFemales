@@ -1,0 +1,34 @@
+package lab2Assignment;
+
+import java.util.Scanner;
+
+public class lab2_q4_percentageOfMaleAndFemales {
+
+	public static void main(String[] args) {
+
+		int numOfMales;
+		int numOfFemales;
+		int numOfStudentsInClass;
+		
+		double percentageOfMales;
+		double percentageOfFemales;
+					
+		Scanner sc = new Scanner (System.in);
+			
+			System.out.print("Enter number of the males in the class: ");
+			numOfMales=sc.nextInt();
+			
+			System.out.print("Enter number of the females in the class: ");
+			numOfFemales=sc.nextInt();
+			
+			numOfStudentsInClass=numOfMales + numOfFemales;
+			
+			percentageOfMales = (double)numOfMales*100/numOfStudentsInClass;
+			percentageOfFemales = (double)numOfFemales*100/numOfStudentsInClass;
+			
+			System.out.println("\nPercentage of males in the class: %" + percentageOfMales);
+			System.out.println("Percentage of females in the class: %" + percentageOfFemales);
+						
+	}
+
+}
